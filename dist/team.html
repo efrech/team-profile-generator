@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resets.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="jumbotron jumbotron-fluid">
+        ${data.teamname}
+    </header>
+    <section class="row justify-content-center">
+        <!--Manager-->
+        <div class="col-12 col-sm-6 col-lg-4 mb-3" style="max-width: 22rem;">
+            <div class="card bg-info">
+                <div class="card-header">
+                    <h2>${data.managername}</h2>
+                    <h3><i class="fa fa-user-plus" style="margin-right: 15px;"></i>${data.position}</h3>
+                </div>
+                <div class="card-body bg-body">
+                    <ul class="card text">
+                        <li>ID: ${data.id}</li>
+                        <li>Email: <a href="mailto:${data.email}">e@gmail.com</a></li>
+                        <li>Office Number: <a href="tel:5551234567">(555)123-4567</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Engineer-->
+        <div class="col-12 col-sm-6 col-lg-4 mb-3" style="max-width: 22rem;">
+            <div class="card bg-info">
+                <div class="card-header">
+                    <h2>Name</h2>
+                    <h3><i class="fa fa-user" style="margin-right: 15px;"></i> Position</h3>
+                </div>
+                <div class="card-body bg-body">
+                    <ul class="card text">
+                        <li>ID</li>
+                        <li>Email</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Engineer 2-->
+        <div class="col-12 col-sm-6 col-lg-4 mb-3" style="max-width: 22rem;">
+            <div class="card bg-info">
+                <div class="card-header">
+                    <h2>Name</h2>
+                    <h3><i class="fa fa-user" style="margin-right: 15px;"></i> Position</h3>
+                </div>
+                <div class="card-body bg-body">
+                    <ul class="card text">
+                        <li>ID</li>
+                        <li>Email</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Second Row-->
+    <section class="row justify-content-center">
+        <!--Manager-->
+        <div class="col-12 col-sm-6 col-lg-4 mb-3" style="max-width: 22rem;">
+            <div class="card bg-info">
+                <div class="card-header">
+                    <h2>Name</h2>
+                    <h3><i class="fa fa-user" style="margin-right: 15px;"></i> Position</h3>
+                </div>
+                <div class="card-body bg-body">
+                    <ul class="card text">
+                        <li>ID</li>
+                        <li>Email</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Intern-->
+        <div class="col-12 col-sm-6 col-lg-4 mb-3" style="max-width: 22rem;">
+            <div class="card bg-info">
+                <div class="card-header">
+                    <h2>Name</h2>
+                    <h3><i class="fa fa-graduation-cap" style="margin-right: 15px;"></i>Position</h3>
+                </div>
+                <div class="card-body bg-body">
+                    <ul class="card text">
+                        <li>ID</li>
+                        <li>Email</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
