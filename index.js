@@ -7,7 +7,7 @@ const employees = [];
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-const createHtml = require('./lib/createHtml');
+const createHtml = require('./src/createHtml');
 
 
 // user input
@@ -163,54 +163,3 @@ function writeToFile(fileName, data) {
         console.log('new team file generated')
     })
 }
-
-
-
-//old
-
-// const questionAdd = [
-//     {
-//         type: 'list',
-//         message: 'Select the employee role you would like to create next',
-//         choices: ["Engineer", "Intern", "all done"],
-//         name: 'nextRole',
-//     }
-// };
-
-// const initialQuestion = questionCompany.concat(questionEmployee, questionManager, questionAdd)
-
-// //Create a function to write Team.html file
-// function writeToFile(fileName, data) {
-//     fs.writeFile(fileName, data, (err) => {
-//         err ? console.log(err) : console.log('team created!')
-//     })
-// }
-
-// // TODO: Create a function to initialize app
-// function presentQuestions(questions) {
-    
-//     inquirer
-//     .prompt(questions)
-//     .then((data) => {
-//         if(data.role === 'Engineer'){
-//             employee = new Engineer (data.name, data.id, data.email, data.github);
-//         } else if(data.role === 'Intern') {
-//             employee = new Engineer (data.name, data.id, data.email, data.github);
-//         }
-//         employees.push(data)
-//         console.log(employees);
-//         if(data.nextRole === 'Engineer'){
-//             presentQuestions(questionEmployee.concat(questionEngineer, questionAdd))
-//         } else if(data.nextRole === 'Intern') {
-//             presentQuestions(questionEmployee.concat(questionIntern, questionAdd))
-//         } else {
-//             writeToFile('index.html', employees)
-//         }
-
-//     }).catch((err) => {
-//         if (err) throw err;
-//     })
-// }
-
-// // Function call to initialize app
-// presentQuestions(initialQuestion);
